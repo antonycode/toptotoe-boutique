@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Page Title</title>
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+   <link rel="stylesheet" href="iui/iui.css" type="text/css" />
+   <link rel="stylesheet" href="iui/t/default/default-theme.css" type="text/css"/>
+   <link rel="stylesheet" href="css/iui-panel-list.css" type="text/css" 
+   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+   <script type="application/x-javascript" src="iui/iui.js"></script>
+   <script type="application/x-javascript" src="js/jquery-2.0.3.js"></script>
+   <script type="application/x-javascript" src="js/MyShop.js"></script>
+   
+</head>
+<body>
+	<div class="toolbar">
+		<a class="button" id="backButton" href="#"></a>
+		<h1 id="pageTitle"></h1>
+		<a class="button" href="#login">Login</a>
+		
+	</div>
+	
+	<div id="home" title="My Shop" class="panel" selected="true">
+		<fieldset>
+			<a class="whiteButton" href="#search">Show Search dialog</a>
+		</fieldset>
+		
+		<h2>Categories</h2>
+
+	</div>
+	
+
+	<ul id="main-screen" class="main-screen">
+		
+	</ul>
+	
+	<div id="product" >
+		#product
+	</div>
+	
+    <form id="search" title="Search" class="dialog" target="_self" name="formname" action="http://demo.iui-js.org/test/form-echo.gtpl" method="GET">
+		<fieldset>
+            <h1>Search</h1>
+            <a class="button leftButton" type="cancel">Cancel</a>
+            <a class="button blueButton" type="submit">Search</a>
+
+            <label for="keyword">Search:</label>
+            <input id="keyword" type="text" name="q" />
+		</fieldset>
+    </form>
+	
+	<form id="login" title="Login" class="panel" name="formname" action="" method="get">
+		<fieldset>
+			<div class="row">
+				<label>Login</label>
+				<input type="text" name="ident" placeholder="Your login">
+			</div>
+			<div class="row">
+				<label>Password</label>
+				<input type="password" name="password" placeholder="Your password">
+			</div>
+		</fieldset>
+		<a class="whiteButton" href="javascript:formname.submit()">Login me in!</a>
+	</form>
+
+</body>
+</html>
